@@ -1,0 +1,38 @@
+#base:documents
+yeto-gateway//
+├── .env
+├── .env.example
+├── docker-compose.yml
+├── package.json
+├── tsconfig.json
+└── src/
+    ├── config/
+    │   ├── env.ts
+    │   └── redis.ts
+    ├── core/
+    │   ├── entities/
+    │   │   └── Transaction.ts
+    │   ├── repositories/
+    │   │   └── ITransactionRepository.ts
+    │   ├── queue/
+    │   │   └── IQueueProvider.ts
+    │   └── use-cases/
+    │       ├── ReceiveTransaction.ts
+    │       └── ProcessTransaction.ts
+    ├── infra/
+    │   ├── database/
+    │   │   └── InMemoryTransactionRepository.ts
+    │   ├── queue/
+    │   │   ├── BullMQProvider.ts
+    │   │   └── workers/
+    │   │       └── PaymentWorker.ts
+    │   └── http/
+    │       ├── controllers/
+    │       │   └── TransactionController.ts
+    │       ├── routes/
+    │       │   └── transactionRoutes.ts
+    │       ├── app.ts
+    │       └── server.ts
+    └── shared/
+        └── errors/
+            └── AppError.ts
