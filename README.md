@@ -77,15 +77,3 @@ MIT — faça o que quiser, apenas mantenha os créditos.
 ---
 
 <p align="center">Feito com ❤️ por <strong>Nyx7</strong></p>
-
-4. **Salve e saia do nano**:  
-   - `Ctrl+O` (salvar)  
-   - `Enter` (confirmar nome)  
-   - `Ctrl+X` (sair)
-
-5. **Atualize o GitHub**:
-```bash
-git add README.md
-git commit -m "Corrige formatação do README.md"
-git push origin main
-```
